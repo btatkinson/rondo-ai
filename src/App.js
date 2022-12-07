@@ -1,7 +1,19 @@
+
+// import Dropdown from './components/Dropdown';
+// import AddPlayer from './components/AddPlayer.js';
+// import {PlayerForm, PlayerDataProvider} from './components/PlayerForm.js';
+import TeamBuilder from './components/TeamBuilder';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const teams = [
+    { id: 1, name: 'Team 1' },
+    { id: 2, name: 'Team 2' },
+    { id: 3, name: 'Team 3' },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +30,13 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* <PlayerDataProvider>
+        <PlayerForm />
+      </PlayerDataProvider>
+      <Dropdown teams={teams}/>
+      <AddPlayer /> */}
+      <TeamBuilder />
+
     </div>
   );
 }
